@@ -1,0 +1,30 @@
+<div class="col-md-12">
+    <div class="card">
+        <form action="[@url]account/wallet/manage" method="POST">
+            <div class="card-header">
+                <h4 class="card-title">
+                    <i class="fa fa-money"></i> 
+                    [#lang_title_wallet]
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="row">    
+                    <div class="col-md-12">
+                        [@message]
+                        <div class="row container">
+                            <h4>[#lang_title_add_wallet]</h4>
+                            <select class="form-control" name="gateway" id="gateway">
+                                [@gateways_list]
+                            </select>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="card-footer">
+                <button type="submit" name="ce_btn" value="save" class="btn btn-primary"> Submit </button>
+                <a  href="[@url]account/wallet" class="btn btn-warning text-light float-right"> Back </a>
+            </div>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[@title] </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cryptoblue.webextee.com/icon.png">
+    <!-- Custom Stylesheet -->
+
+    <link rel="stylesheet" href="[@url]app/templates/LightExchanger/assets/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="[@url]app/templates/LightExchanger/assets/font-awesome/css/font-awesome.7min.css">
+    <link rel="stylesheet" href="[@url]app/templates/LightExchanger/assets/vendor/toastr/toastr.min.css">
+    <link rel="stylesheet" href="[@url]app/templates/LightExchanger/assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+
+    <div id="main-wrapper">
+
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <nav class="navbar">
+
+                            <div class="header-search d-flex align-items-center">
+                                <a class="brand-logo mr-3" href="[@url]">
+                                    <img src="https://cryptoblue.webextee.com/logo.png" alt="" width="150">
+                                </a>
+                            </div>
+
+
+                            <div class="dashboard_log">
+                                <div class="d-flex align-items-center">
+                                    <div class="profile_log dropdown">
+                                        <div class="user" data-toggle="dropdown">
+                                            <span class="thumb"><i class="mdi mdi-account"></i></span>
+                                            <span class="name">[@unamez]</span>
+                                            <span class="arrow"><i class="la la-angle-down"></i></span>
+                                        </div>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="[@url]account/settings/profile" class="dropdown-item">
+                                                <i class="fa fa-user"></i> [#lang_menu_profile]
+                                            </a>
+                                            <a href="[@url]account/settings/security" class="dropdown-item">
+                                                <i class="fa fa-shield"></i> [#lang_menu_security]
+                                            </a>
+                                            <a href="[@url]account/settings/verification" class="dropdown-item">
+                                                <i class="fa fa-check-square-o"></i> [#lang_menu_verification]
+                                            </a>
+
+                                            <a href="[@url]account/tickets" class="dropdown-item">
+                                                <i class="fa fa-support"></i> [#lang_menu_support_tickets] [@new_tickets]
+                                            </a>
+                                            <a href="[@url]account/logout" class="dropdown-item logout">
+                                                <i class="fa fa-sign-out"></i> [#lang_menu_logout]
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <a class="brand-logo" href="[@url]">
+                <img src="https://cryptoblue.webextee.com//logo.png" alt="">
+            </a>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="[@url]">
+                            <span><i class="fa fa-refresh"></i></span>
+                            <span class="nav-text">[#lang_menu_new_exchange]</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="[@url]account/dashboard">
+                            <span><i class="fa fa-dashboard"></i></span>
+                            <span class="nav-text">[#lang_menu_dashboard] </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="[@url]account/exchanges">
+                            <span><i class="fa fa-refresh"></i></span>
+                            <span class="nav-text">[#lang_menu_exchanges] </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="[@url]account/wallet">
+                            <span><i class="fa fa-money"></i></span>
+                            <span class="nav-text">[#lang_menu_wallet] </span>
+                        </a>
+                    </li>
+                    [@custom_menu]
+                    <li>
+                        <a href="[@url]account/reviews">
+                            <span><i class="fa fa-star"></i></span>
+                            <span class="nav-text">[#lang_menu_reviews] </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="social">
+                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="copy_right">
+                    © 2024 [@name]
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="content-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="row">

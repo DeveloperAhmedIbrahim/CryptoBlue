@@ -1,0 +1,33 @@
+<div class="modal fade" id="inv_withdrawal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">[#lang_withdrawal_from_your] [@currency] [#lang_withdrawal_balance]</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="inv_withdrawal_content">
+                <span id="inv_withdrawal_status"></span>
+                <form id="form_inv_withdrawal">
+                    <div class="form-group">
+                        <label>[#lang_field_1]</label>
+                        <div class="input-group mb-3">
+                                <input type="text" class="form-control" name="amount" placeholder="0.00" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                  <span class="input-group-text" id="basic-addon2">[@currency]</span>
+                                </div>
+                              </div>
+                        <small>[#lang_field_1_info]: [@min_withdrawal_amount] [@currency]<br/>[#lang_field_1_info_2]: [@ubalance] [@currency]</small>
+                        <input type="hidden" name="currency" value="[@currency]">
+                    </div>
+                    <div class="form-group">
+                        <label>[@name] [#lang_field_34]</label>
+                        <input type="text" class="form-control" name="address">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="ce_invest_withdrawal_process('[@package_id]');">[#lang_btn_24]</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>

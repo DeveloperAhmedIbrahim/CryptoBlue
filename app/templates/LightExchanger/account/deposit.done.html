@@ -1,0 +1,45 @@
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">
+                <i class="fa fa-plus"></i> [#lang_title_deposit_balance]
+            </h4>
+        </div>
+        <div class="card-body">
+            <form action="[@url]account/deposit"  method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="table-responsive text-center" style="margin-top: 25px">
+                            <span class="text-center">
+                                <h1 class="text-success"><i class="fa fa-check-circle" aria-hidden="true"></i> Request succeeded !</h1>
+                                [#lang_transaction_success_1]
+                                [#lang_transaction_success_2]
+                            </span>
+                            <table class="table table-striped" style="width:100%; margin: 0 auto">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div> 
+                                                <label for="" style="font-size: 20px;"> Send &nbsp; <img src="[@crypto_icon]" width="30" alt=""> &nbsp; [@currency] &nbsp; ([@amount] &nbsp; [@currency_name]) </label>
+                                            </div>
+                                            <div> 
+                                                <label for=""> [#lang_to_wallet]: &nbsp; [@to_wallet] </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <label for="">[#lang_transaction_id]: [@transaction_id]</label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

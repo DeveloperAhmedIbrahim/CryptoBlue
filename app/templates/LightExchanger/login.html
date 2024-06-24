@@ -1,0 +1,56 @@
+<div class="py-5 margin-top">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">[#lang_title_login]</h4>
+                    </div>
+                    <div class="card-body">
+
+                        [@results]
+
+                        <form role="form" action="" method="POST">
+                            <div class="form-group">
+                                <label for="sender-email" class="control-label">[#lang_field_26]:</label>
+
+                                <div class="input-icon"><i class="icon-user fa"></i>
+                                    <input id="sender-email" type="text" placeholder="Email address" class="form-control email" name="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="user-pass" class="control-label">[#lang_field_27]:</label>
+
+                                <div class="input-icon"><i class="icon-lock fa"></i>
+                                    <input type="password" class="form-control" placeholder="Password" id="user-pass" name="password">
+                                </div>
+                            </div>
+
+                            [@insert_recaptcha]
+
+                            <div class="form-group">
+                                <button type="submit" name="ce_btn" value="login" class="btn btn-primary  btn-block">[#lang_btn_13]</a>
+                                    </div>
+    
+                                </form>
+
+                    </div>
+                    <div class="card-footer">
+    
+                                
+    
+    
+                        <p class="text-center pull-right"><a href="[@url]password/reset"> [#lang_lost_your_password] </a>
+                        </p>
+
+                        <div style=" clear:both"></div>
+                    </div>
+                </div>
+                <div class="login-box-btm text-center">
+                    <p> [#lang_dont_have_account] <br>
+                        <a href="[@url]register"><strong>[#lang_sign_up]</strong> </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

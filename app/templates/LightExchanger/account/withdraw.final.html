@@ -1,0 +1,74 @@
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title"><i class="fa fa-share"></i> [#lang_title_withdraw_balance]</h4>
+        </div>
+        <form action="" id="" method="POST">
+            <div class="card-body">
+                <div class="row d-flex justify-content-center">
+                    <input type="hidden" name="request_type" value="final_withdraw">
+                    <input type="hidden" name="wallet_address" value="[@wallet_address]">
+                    <input type="hidden" name="wallet" value="[@wallet]">
+                    <input type="hidden" name="amount" value="[@amount]">
+                    <input type="hidden" name="time" value="[@time]">
+                    <input type="hidden" name="fees" value="[@fees]">
+                    <input type="hidden" name="total_receive" value="[@total_receive]">
+                    <div class="col-sm-12 col-md-12 col-lg-7">
+                        <div class="table-responsive" style="margin-top: 25px">
+                            <table class="table table-striped" style="margin: 0 auto">
+                                <tbody>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_withdraw_amount]:</span></td>
+                                        <td>
+                                            <span class="float-right">[@currency_html]</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_status]:</span></td>
+                                        <td>
+                                            <span class="float-right"><span class="badge badge-warning">[@status]</span></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_wallet_address]:</span></td>
+                                        <td><span class="float-right">[@wallet_address]</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_created]:</span></td>
+                                        <td><span class="float-right">[@created]</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_fees]:</span></td>
+                                        <td><span class="float-right">[@fees]%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_total_receive]:</span></td>
+                                        <td><span class="float-right">[@total_receive]</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive text-center" style="margin-top: 25px">
+                            <table class="table table-striped" style="max-width: 500px; margin: 0 auto">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-primary" type="submit" role="button" name="ce_btn" value="save">
+                                                Withdraw
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" type="submit" role="button" name="ce_btn" value="cancel">
+                                                [#lang_btn_12]
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </form>
+    </div>
+</div>

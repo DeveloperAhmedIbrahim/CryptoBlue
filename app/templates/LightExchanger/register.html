@@ -1,0 +1,60 @@
+<div class="py-5 margin-top">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">[#lang_title_create_account]</h4>
+                    </div>
+                    <div class="card-body">
+
+                        [@results]
+
+                        <form role="form" action="" method="POST">
+                            <div class="form-group">
+                                <label for="sender-email" class="control-label">[#lang_field_26]:</label>
+
+                                <div class="input-icon"><i class="icon-user fa"></i>
+                                    <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="user-pass" class="control-label">[#lang_field_27]:</label>
+
+                                <div class="input-icon"><i class="icon-lock fa"></i>
+                                    <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-pass" class="control-label">[#lang_field_32]:</label>
+
+                                <div class="input-icon"><i class="icon-lock fa"></i>
+                                    <input type="password" name="cpassword" class="form-control" id="inputPassword3" placeholder="Confirm Password">
+                                </div>
+                            </div>
+
+                            [@insert_recaptcha]
+
+                            <div class="col-auto my-1 no-padding">
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" name="p1" value="ok" class="custom-control-input" id="customControlAutosizing">
+                                    <label class="custom-control-label" for="customControlAutosizing">  
+                                                    <span class="custom-control-description"> [#lang_i_agree_with] <a href="[@url]page/terms-and-conditions">Terms & Conditions</a> </span>
+                                                </label>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <button type="submit" name="ce_btn" value="register" class="btn btn-primary">[#lang_btn_21]</a></div>
+                                    </div>
+    
+                                </form>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

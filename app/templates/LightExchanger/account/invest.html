@@ -1,0 +1,101 @@
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-body">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">[#lang_select_plan]</span>
+                </div>
+                <select class="form-control" onchange="ce_invest_change_plan(this.value);">
+                    [@invest_plans]
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <center>
+                <i class="fa fa-percent fa-3x"></i><br/><br/>
+                <h3>[@package_name]<br/><small>
+                            [#lang_daily_profit]: [@package_daily_profit]%<br/>
+                            [#lang_investment_days]: [@package_investment_days]<br/>
+                            [#lang_min_amount]: [@package_min_amount] [@package_currency]</small></h3>
+                <a href="javascript:void(0);" onclick="ce_invest('[@package_id]');" class="btn btn-primary">[#lang_btn_22]</a>
+            </center>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="card">
+        <div class="card-body">
+
+            <center>
+                <i class="fa fa-money fa-3x"></i><br/><br/>
+                <h3>[#lang_your_balance]<br/><small>[@user_balance] [@package_currency]</small></h3>
+                <a href="javascript:void(0);" onclick="ce_invest_deposit('[@package_id]');" class="btn btn-primary">[#lang_btn_23]</a> <a href="javascript:void(0);" onclick="ce_invest_withdrawal('[@package_id]');" class="btn btn-primary">[#lang_btn_24]</a>
+            </center>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title"><i class="fa fa-check"></i> [#lang_active_investments]</h4>
+        </div>
+        <div class="card-body">
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>[#lang_tb_invest_id]</th>
+                            <th>[#lang_tb_amount]</th>
+                            <th>[#lang_tb_daily_profit]</th>
+                            <th>[#lang_tb_your_profit]</th>
+                            <th>[#lang_tb_status]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        [@invest_rows]
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title"><i class="fa fa-download"></i> [#lang_withdrawals]</h4>
+        </div>
+        <div class="card-body">
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>[#lang_tb_withdrawal_id]</th>
+                            <th>[#lang_tb_amount]</th>
+                            <th>[#lang_tb_transaction_id]</th>
+                            <th>[#lang_tb_status]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        [@withdrawal_rows]
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="invest_content"></div>

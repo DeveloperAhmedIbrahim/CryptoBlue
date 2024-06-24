@@ -1,0 +1,34 @@
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title"><i class="fa fa-minus"></i> [#lang_title_withdraw_balance]</h4>
+        </div>
+        <form action="" id="" method="POST">
+            <input type="hidden" name="page" value="initialization">
+            <div class="card-body">
+                [@message]
+                <input type="hidden" name="request_type" value="withdraw">
+                <div class="form-group">
+                    <label>[#lang_field_35]</label>
+                    <label class="float-right">Current balance: <span id="current_balance">[@current_balance]</span></label>
+                    <select class="form-control" name="wallet" id="wallet" onchange="ce_change_withdraw_wallets(this)">
+                        <option value="0" selected disabled>[#lang_field_35]</option>
+                        [@gateways_list]
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>[#lang_wallet_address]</label>
+                    <input type="text" class="form-control" name="wallet_address">
+                </div>
+                <div class="form-group">
+                    <label>[#lang_amount]</label>
+                    <input type="text" class="form-control" name="amount">
+                </div>                
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary" name="ce_btn" value="save">Next</button>
+                <a  href="[@url]account/wallet" class="btn btn-warning text-light float-right"> Back </a>
+            </div>
+        </form>
+    </div>
+</div>

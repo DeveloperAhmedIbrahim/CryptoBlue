@@ -1,0 +1,50 @@
+<div class="modal fade" id="inv_invest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">[#lang_title_invest] [@name] [@currency]</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="inv_invest_content">
+                <span id="inv_invest_status"></span>
+                <form id="form_inv_invest">
+                        <div class="row">
+                                <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>[#lang_field_1]</label>
+                                            <input type="text" class="form-control" id="mi_amount" name="amount" value="[@min_amount]" onkeyup="CE_InvestCalculator(this.value);" onkeydown="CE_InvestCalculator(this.value);">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>[#lang_investment_days]</label><br/>
+                                            <b><span id="mi_days">[@investment_days]</span></b>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>[#lang_daily_profit]</label><br/>
+                                            <b><span id="mi_dprofit">[@daily_profit]</span>%</b>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>[#lang_total_profit]</label><br/>
+                                            <b><span id="mi_tprofit">[@total_profit]</span> [@currency]</b>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>[#lang_total_return]</label><br/>
+                                            <b><span id="mi_treturn">[@total_return]</span> [@currency]</b>
+                                        </div>
+                                    </div>
+                        </div>
+                    <button type="button" class="btn btn-primary" onclick="ce_invest_process('[@package_id]');">[#lang_btn_22]</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>

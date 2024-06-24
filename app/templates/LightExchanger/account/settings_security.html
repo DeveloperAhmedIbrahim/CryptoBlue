@@ -1,0 +1,51 @@
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title"><i class="fa fa-key"></i> [#lang_menu_change_password]</h4>
+        </div>
+        <div class="card-body">
+
+            [@results]
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label class="col-form-label" for="forCurrentPassword">[#lang_field_19]</label>
+                    <input type="password" class="form-control" id="forCurrentPassword" name="cpassword">
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="forCurrentPassword">[#lang_field_20]</label>
+                    <input type="password" class="form-control" id="forNewPassword" name="npassword">
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="forCNewPassword">[#lang_field_21]</label>
+                    <input type="password" class="form-control" id="forCNewPassword" name="cnpassword">
+                </div>
+                <button class="btn btn-primary" type="submit" name="ce_save" value="password">[#lang_btn_8]</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title"><i class="fa fa-toggle-on"></i> [#lang_menu_twofa]</h4>
+        </div>
+        <div class="card-body">
+
+            [@results_2fa]
+            <p>[#lang_info_3]</p>
+            <form action="" method="POST">
+                <div class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="2fa_enable" value="1" [@u_2fa_status]> [#lang_checkbox_1]
+                    </label>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit" name="ce_save" value="2fa">[#lang_btn_9]</button>
+            </form>
+
+        </div>
+    </div>
+</div>

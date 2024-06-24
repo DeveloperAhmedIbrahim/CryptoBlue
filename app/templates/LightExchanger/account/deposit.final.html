@@ -1,0 +1,84 @@
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">
+                <i class="fa fa-plus"></i> [#lang_title_deposit_balance]
+            </h4>
+        </div>
+        <div class="card-body">
+            [@message]
+            <form action=""  method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <input type="hidden" name="amount" value="[@amount]">
+                    <input type="hidden" name="time" value="[@time]">
+                    <input type="hidden" name="gateway" value="[@gateway]">
+                    <input type="hidden" name="page" value="finalization">
+                    <input type="hidden" name="wallet_id" value="[@wallet_id]">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="table-responsive" style="margin-top: 25px">
+                            <table class="table table-striped" style="margin: 0 auto">
+                                <tbody>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_requested_amount]:</span></td>
+                                        <td>
+                                            <span class="float-right">[@currency_html]</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_status]:</span></td>
+                                        <td>
+                                            <span class="float-right"><span class="badge badge-warning">[@status]</span></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_deposit_to_wallet_address]:</span></td>
+                                        <td><span class="float-right">[@to_wallet]</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_created]:</span></td>
+                                        <td><span class="float-right">[@created]</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive text-center" style="margin-top: 25px">
+                            <span class="text-center">
+                                [@currency_name] generate unique reference number, please enter it in field below to verify and confirm payment.
+                            </span>
+                            <table class="table table-striped" style="max-width: 500px; margin: 0 auto">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <label for="">[#lang_transaction_id]</label>
+                                            <input type="text" class="form-control" name="transaction_id" placeholder="Transaction ID/Number/Batch">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <label for="">[#lang_upload_receipt]</label>
+                                            <input type="file" class="form-control" accept="image/*" name="receipt">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-primary" type="submit" role="button" name="ce_btn" value="save">
+                                                [#lang_btn_16]
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" type="submit" role="button" name="ce_btn" value="cancel">
+                                                [#lang_btn_12]
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

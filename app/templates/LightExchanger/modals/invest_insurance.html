@@ -1,0 +1,49 @@
+<div class="modal fade" id="inv_buy_insurance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">[#lang_buy_insurance_for] #[@invest_id]</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="inv_insurance_content">
+            <span id="inv_insurance_status"></span>
+            <form id="form_inv_insurance">
+                    <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>[#lang_invested_amount]</label><br/>
+                                        <b><span id="mi_days">[@amount] [@currency]</span></b>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>[#lang_insurance_tax]</label><br/>
+                                        <b><span id="mi_dprofit">[@insurance_tax] [@currency]</span> ([@insurance_fee]%)</b>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>[#lang_insurance_period]</label><br/>
+                                        <b><span id="mi_tprofit">[@duration]</span> days</b>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>[#lang_your_balance]</label><br/>
+                                        <b><span id="mi_treturn">[@userbalance]</span> [@currency]</b>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="alert alert-info">
+                                        [#lang_info_10]
+                                    </div>
+                                </div>
+                    </div>
+                <button type="button" class="btn btn-primary" onclick="ce_invest_insurance_process('[@invest_id]');">[#lang_btn_25]</button> <button type="button" class="btn btn-danger" data-dismiss="modal">[#lang_btn_12]</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>

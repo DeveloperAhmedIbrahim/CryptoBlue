@@ -1,0 +1,64 @@
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title"><i class="fa fa-share"></i> [#lang_title_transfer_balance]</h4>
+        </div>
+        <form action="" id="" method="POST">
+            <div class="card-body">
+                <div class="row d-flex justify-content-center">
+                    <input type="hidden" name="request_type" value="final_transfer">
+                    <input type="hidden" name="amount" value="[@amount]">
+                    <input type="hidden" name="wallet_id" value="[@wallet_id]">
+                    <input type="hidden" name="wallet" value="[@wallet]">
+                    <input type="hidden" name="time" value="[@time]">
+                    <div class="col-sm-12 col-md-12 col-lg-7">
+                        <div class="table-responsive" style="margin-top: 25px">
+                            <table class="table table-striped" style="margin: 0 auto">
+                                <tbody>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_transfer_amount]:</span></td>
+                                        <td>
+                                            <span class="float-right">[@currency_html]</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_status]:</span></td>
+                                        <td>
+                                            <span class="float-right"><span class="badge badge-warning">[@status]</span></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_to_wallet_address]:</span></td>
+                                        <td><span class="float-right">[@wallet_id]</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="float-left">[#lang_created]:</span></td>
+                                        <td><span class="float-right">[@created]</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive text-center" style="margin-top: 25px">
+                            <table class="table table-striped" style="max-width: 500px; margin: 0 auto">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <button class="btn btn-primary" type="submit" role="button" name="ce_btn" value="save">
+                                                [#lang_btn_27]
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" type="submit" role="button" name="ce_btn" value="cancel">
+                                                [#lang_btn_12]
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </form>
+    </div>
+</div>
